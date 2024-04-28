@@ -11,6 +11,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/mat281_01/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/mat281_02/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/MAT281_2024/homeworks/hw_01/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
