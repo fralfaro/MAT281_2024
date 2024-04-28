@@ -23,11 +23,20 @@ Algunos ejemplos comunes de sistemas operativos son Windows, macOS, Linux, Andro
 
 **Interfaz de Línea de Comandos (*Command Line Interface* / CLI)**
 
-La **Interfaz de Línea de Comandos** es un tipo de interfaz de usuario que permite a los usuarios interactuar con un sistema informático mediante comandos de texto introducidos a través de una línea de comando. En lugar de utilizar elementos gráficos como ventanas, botones y menús, los usuarios ingresan comandos específicos en un símbolo del sistema o terminal.
+La **Interfaz de Línea de Comandos** es un tipo de interfaz de usuario que permite
+a los usuarios interactuar con un sistema informático mediante comandos de texto introducidos 
+a través de una línea de comando. En lugar de utilizar elementos gráficos como ventanas, 
+botones y menús, los usuarios ingresan comandos específicos en un símbolo del sistema o terminal.
 
-En una CLI, los usuarios escriben comandos y argumentos de texto plano para ejecutar diversas tareas, como administrar archivos, manipular configuraciones del sistema, ejecutar programas y realizar diversas operaciones informáticas. Esto proporciona un nivel de control y flexibilidad avanzado para usuarios experimentados y administradores de sistemas, aunque puede tener una curva de aprendizaje más pronunciada en comparación con las interfaces gráficas de usuario (GUI).
+En una CLI, los usuarios escriben comandos y argumentos de texto plano para
+ejecutar diversas tareas, como administrar archivos, manipular configuraciones del
+sistema, ejecutar programas y realizar diversas operaciones informáticas. 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/450px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png" width = "400" align="center"/>
+Esto proporciona un nivel de control y flexibilidad avanzado para usuarios experimentados,
+aunque puede tener una curva de aprendizaje más pronunciada en comparación con
+las interfaces gráficas de usuario (GUI).
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/450px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png" width = "600" align="center"/>
 
 
 ## Python

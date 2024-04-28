@@ -21,6 +21,8 @@ markdown_extensions:
   - neoteroi.projects
   - admonition
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - css/neoteroi-mkdocs.css
