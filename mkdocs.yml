@@ -89,7 +89,10 @@ extra_javascript:
 
 #TOC
 nav:
-    - Home: index.md
+    - 🏠 Home:
+        - index.md
+        - mat281_01.md
+        - mat281_02.md
     - 🛠️ Toolkit:
         - lectures/toolkit/bt_intro.ipynb
         - Ecosistema Git:

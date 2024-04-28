@@ -1,6 +1,5 @@
 ---
 hide:
-  - navigation
   - toc
 ---
 
@@ -12,17 +11,17 @@ hide:
 
 ::cards:: cols=5
 
-- title: Toolkit
+- title: Toolkit del Curso
   content: Python, Git/GitHub
   image: images/icons/tools.png
   url: lectures/toolkit/bt_intro
 
-- title: Manipulación Datos
+- title: Manipulación de Datos
   content: Numpy, Pandas
   image: images/icons/data.png
   url: lectures/data_manipulation/pd_intro
 
-- title: Visualización
+- title: Visualización de Datos
   content: Matplotlib, Seaborn
   image: images/icons/vis.png
   url: lectures/visualization/vi_intro
