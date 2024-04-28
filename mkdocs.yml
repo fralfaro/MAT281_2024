@@ -131,6 +131,7 @@ nav:
         - lectures/machine_learning/over_02.ipynb
         - lectures/machine_learning/ts_01.ipynb
     - ✅ Evaluations:
+        - evaluation.md
         - Laboratorios:
             - Lab 01: labs/lab_01.ipynb
             - Lab 02: labs/lab_02.ipynb
