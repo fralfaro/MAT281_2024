@@ -96,6 +96,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/data_manipulation/data_intro/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/MAT281_2024/lectures/data_manipulation/eda_01/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
@@ -147,6 +152,11 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/MAT281_2024/lectures/machine_learning/cla_01/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/machine_learning/ml_intro/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -232,6 +242,11 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/MAT281_2024/lectures/visualization/vi_intro/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/visualization/vis_intro/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
