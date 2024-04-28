@@ -94,14 +94,14 @@ nav:
         - mat281_01.md
         - mat281_02.md
     - 🛠️ Toolkit:
-        - lectures/toolkit/bt_intro.ipynb
+        - lectures/toolkit/bt_intro.md
         - Ecosistema Git:
             - lectures/toolkit/git.md
             - lectures/toolkit/github.md
         - Ecosistema Python:
-            - lectures/toolkit/bt_01.ipynb
-            - lectures/toolkit/bt_02.ipynb
-            - lectures/toolkit/bt_03.ipynb
+            - lectures/toolkit/markdown.md
+            - lectures/toolkit/python.ipynb
+            - lectures/toolkit/google_colab.ipynb
     - 📝 Data Manipulation:
         - lectures/data_manipulation/pd_intro.ipynb
         - Numpy:
