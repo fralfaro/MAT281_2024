@@ -103,7 +103,7 @@ nav:
             - lectures/toolkit/python.ipynb
             - lectures/toolkit/google_colab.ipynb
     - 📝 Data Manipulation:
-        - lectures/data_manipulation/pd_intro.ipynb
+        - lectures/data_manipulation/data_intro.md
         - Numpy:
             - lectures/data_manipulation/sc_01.ipynb
             - lectures/data_manipulation/sc_02.ipynb
@@ -117,11 +117,11 @@ nav:
             - lectures/data_manipulation/eda_intro.md
             - lectures/data_manipulation/eda_01.ipynb
     - 📊 Visualization:
-        - lectures/visualization/vi_intro.ipynb
+        - lectures/visualization/vis_intro.md
         - lectures/visualization/vi_01.ipynb
         - lectures/visualization/vi_02.ipynb
     - 🤖 Machine Learning:
-        - lectures/machine_learning/ml_intro.ipynb
+        - lectures/machine_learning/ml_intro.md
         - lectures/machine_learning/reg_01.ipynb
         - lectures/machine_learning/reg_02.ipynb
         - lectures/machine_learning/cla_01.ipynb

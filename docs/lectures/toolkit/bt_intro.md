@@ -76,7 +76,7 @@ Aislar el desarrollo para mejorar la compatibilidad y la reproducibilidad de los
 - `Pipenv` o `Poetry`: Librerías especializadas en la gestión de dependencias (altamente recomendadas).
 
 
-> 🔑 Nota: Las sugerencias anteriores están orientadas principalmente al
+> 🔑 **Nota**: Las sugerencias anteriores están orientadas principalmente al
 > trabajo en entornos locales. Sin embargo, dado que todo el curso está diseñado
 > para trabajar en **Google Colab**.
 
