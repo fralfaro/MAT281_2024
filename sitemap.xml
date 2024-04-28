@@ -191,21 +191,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/bt_01/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/bt_02/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/bt_03/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/bt_intro/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
@@ -217,6 +202,21 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/github/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/google_colab/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/markdown/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/MAT281_2024/lectures/toolkit/python/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
