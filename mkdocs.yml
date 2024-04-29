@@ -106,18 +106,11 @@ nav:
             - lectures/toolkit/google_colab.ipynb
     - 📝 Data Manipulation:
         - lectures/data_manipulation/data_intro.md
-        - Numpy:
-            - lectures/data_manipulation/sc_01.ipynb
-            - lectures/data_manipulation/sc_02.ipynb
-            - lectures/data_manipulation/sc_03.ipynb
-        - Pandas:
-            - lectures/data_manipulation/pd_01.ipynb
-            - lectures/data_manipulation/pd_02.ipynb
-            - lectures/data_manipulation/pd_03.ipynb
-            - lectures/data_manipulation/pd_04.ipynb
-        - EDA:
-            - lectures/data_manipulation/eda_intro.md
-            - lectures/data_manipulation/eda_01.ipynb
+        - lectures/data_manipulation/sc_01.ipynb
+        - lectures/data_manipulation/pd_01a.ipynb
+        - lectures/data_manipulation/pd_01b.ipynb
+        - lectures/data_manipulation/eda_intro.md
+        - lectures/data_manipulation/eda_01.ipynb
     - 📊 Visualization:
         - lectures/visualization/vis_intro.md
         - lectures/visualization/vi_01.ipynb

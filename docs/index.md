@@ -19,12 +19,12 @@ hide:
 - title: Manipulación de Datos
   content: Numpy, Pandas
   image: images/icons/data.png
-  url: lectures/data_manipulation/pd_intro
+  url: lectures/data_manipulation/data_intro
 
 - title: Visualización de Datos
   content: Matplotlib, Seaborn
   image: images/icons/vis.png
-  url: lectures/visualization/vi_intro
+  url: lectures/visualization/vis_intro
 
 - title: Machine Learning
   content: Sklearn, XGBoost
