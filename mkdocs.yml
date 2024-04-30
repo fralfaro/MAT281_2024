@@ -109,12 +109,10 @@ nav:
         - lectures/data_manipulation/sc_01.ipynb
         - lectures/data_manipulation/pd_01a.ipynb
         - lectures/data_manipulation/pd_01b.ipynb
-        - lectures/data_manipulation/eda_intro.md
-        - lectures/data_manipulation/eda_01.ipynb
     - 📊 Visualization:
         - lectures/visualization/vis_intro.md
-        - lectures/visualization/vi_01.ipynb
-        - lectures/visualization/vi_02.ipynb
+        - lectures/visualization/vis_01.ipynb
+        - lectures/visualization/vis_02.ipynb
     - 🤖 Machine Learning:
         - lectures/machine_learning/ml_intro.md
         - lectures/machine_learning/reg_01.ipynb
