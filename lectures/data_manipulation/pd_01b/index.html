@@ -16,7 +16,7 @@
         <link rel="prev" href="../pd_01a/">
       
       
-        <link rel="next" href="../eda_intro/">
+        <link rel="next" href="../../visualization/vis_intro/">
       
       
       <link rel="icon" href="../../../images/usm.png">
@@ -792,10 +792,6 @@
       
         
       
-        
-      
-        
-      
     
     
       
@@ -1122,48 +1118,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../eda_intro/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introducción
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../eda_01/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Caso Aplicado
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1245,11 +1199,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization/vi_01/" class="md-nav__link">
+      <a href="../../visualization/vis_01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Matplotlib
+    Tipos de Gráficos
   </span>
   
 
@@ -1266,11 +1220,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization/vi_02/" class="md-nav__link">
+      <a href="../../visualization/vis_02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Seaborn
+    Visualizaciones
   </span>
   
 
@@ -5832,63 +5786,118 @@ result.head()</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="tipos-de-formatos">Tipos de Formatos<a class="anchor-link" href="#tipos-de-formatos">¶</a></h2><p><img align="center" alt="No description has been provided for this image" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/data_manipulation/images/wide_and_long.png"/></p>
-<p>Dentro del mundo de los dataframe (o datos tabulares) existen dos formas de presentar la naturaleza de los datos: formato wide y formato long.</p>
-<p>Por ejemplo, el conjunto de datos <a href="http://archive.ics.uci.edu/ml/datasets/zoo">Zoo Data Set</a> presenta las características de diversos animales, de los cuales presentamos las primeras 5 columnas.</p>
+<h2 id="tipos-de-formatos">Tipos de Formatos<a class="anchor-link" href="#tipos-de-formatos">¶</a></h2><img align="center" alt="No description has been provided for this image" src="https://www.statology.org/wp-content/uploads/2021/12/wideLong1-1.png" width="420"/>
+<p>Dentro del mundo de los dataframe (o datos tabulares) existen dos formas de presentar la naturaleza de los datos: <strong>formato wide</strong> y <strong>formato long</strong>.</p>
+<p>Ejemplo, el siguiente <strong>conjunto de datos</strong> representa estadísticas de rendimiento para cuatro equipos (A, B, C y D) en un cierto contexto deportivo. Cada fila corresponde a un equipo y muestra tres medidas diferentes de rendimiento.</p>
 <table>
 <thead>
 <tr>
-<th>animal_name</th>
-<th>hair</th>
-<th>feathers</th>
-<th>eggs</th>
-<th>milk</th>
+<th>Team</th>
+<th>Points</th>
+<th>Assists</th>
+<th>Rebounds</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>antelope</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
+<td>A</td>
+<td>88</td>
+<td>12</td>
+<td>22</td>
 </tr>
 <tr>
-<td>bear</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
+<td>B</td>
+<td>91</td>
+<td>17</td>
+<td>28</td>
 </tr>
 <tr>
-<td>buffalo</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
+<td>C</td>
+<td>99</td>
+<td>24</td>
+<td>30</td>
 </tr>
 <tr>
-<td>catfish</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
+<td>D</td>
+<td>94</td>
+<td>28</td>
+<td>31</td>
 </tr>
 </tbody>
 </table>
 <p>La tabla así presentada se encuentra en <strong>wide format</strong>, es decir, donde los valores se extienden a través de las columnas.</p>
 <p>Sería posible representar el mismo contenido anterior en <strong>long format</strong>, es decir, donde los mismos valores se indicaran a través de las filas:</p>
-<p>|animal_name|characteristic|value|
-|-----------|----|--------|
-|antelope|hair |1|
-|antelope|feathers|0|
-|antelope|eggs|0|
-|antelope|milk|1|
-|...|...|...|...|..|
-|catfish|hair |0|
-|catfish|feathers|0|
-|catfish|eggs|1|
-|catfish|milk|0|</p>
+<table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Points</td>
+<td>88</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Assists</td>
+<td>12</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Rebounds</td>
+<td>22</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Points</td>
+<td>91</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Assists</td>
+<td>17</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Rebounds</td>
+<td>28</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Points</td>
+<td>99</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Assists</td>
+<td>24</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Rebounds</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Points</td>
+<td>94</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Assists</td>
+<td>28</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Rebounds</td>
+<td>31</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -6840,7 +6849,7 @@ df_melt.head()</div>
         
         
           
-          <a href="../eda_intro/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción">
+          <a href="../../visualization/vis_intro/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
