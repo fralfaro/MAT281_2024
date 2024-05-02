@@ -113,6 +113,10 @@ nav:
         - lectures/visualization/vis_intro.md
         - lectures/visualization/vis_01.ipynb
         - lectures/visualization/vis_02.ipynb
+    - 📈 Trading:
+        - lectures/trading/trading_intro.md
+        - lectures/trading/trading_01.ipynb
+        - lectures/trading/trading_02.ipynb
     - 🤖 Machine Learning:
         - lectures/machine_learning/ml_intro.md
         - lectures/machine_learning/reg_01.ipynb
