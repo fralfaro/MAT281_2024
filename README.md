@@ -1,8 +1,9 @@
 # MAT281 - Matemáticas Aplicadas
 
 ![example workflow](https://github.com/fralfaro/MAT281_2024/actions/workflows/documentation.yml/badge.svg)
-<a href="https://fralfaro.github.io/MAT281_2024/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/docs-link-brightgreen"></a>
-<a href=""><img alt="Link a la Documentación" src="https://img.shields.io/badge/notas-link-brightgreen"></a>
+<a href="https://fralfaro.github.io/MAT281_2024/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/📖 docs-link-brightgreen"></a>
+<a href="https://drive.google.com/drive/folders/1Z0UpDZgEVE0ElrDkc9u8l52nZuxuBcTA"><img alt="Link a la Documentación" src="https://img.shields.io/badge/📹 clases-link-brightgreen"></a>
+<a href="https://drive.google.com/drive/folders/1Zj3OMAF-sKCjbimDjMpadKv0L1Kilwis"><img alt="Link a la Documentación" src="https://img.shields.io/badge/💯 notas-link-brightgreen"></a>
 
 
 ## Descripción de la Asignatura
@@ -62,7 +63,7 @@ El curso se organiza en torno a los siguientes temas principales:
 ### Proyecto 
 - Semestral.
 - Plazo: final del curso (xx de Diciembre 2024).
-- Individual.
+- Grupal: máximo 4 integrantes.
 - Entregas fuera del plazo descuentan 25 puntos por día (parte entera).  
 
 ### Nota Final
