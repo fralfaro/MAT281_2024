@@ -5,7 +5,6 @@
 <a href="https://drive.google.com/drive/folders/1Z0UpDZgEVE0ElrDkc9u8l52nZuxuBcTA"><img alt="Link a la Documentación" src="https://img.shields.io/badge/💿 clases-link-brightgreen"></a>
 <a href="https://drive.google.com/drive/folders/1Zj3OMAF-sKCjbimDjMpadKv0L1Kilwis"><img alt="Link a la Documentación" src="https://img.shields.io/badge/💯 notas-link-brightgreen"></a>
 
-
 ## Descripción de la Asignatura
 
 La asignatura tiene como objetivo proporcionar a
