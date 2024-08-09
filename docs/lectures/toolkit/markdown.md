@@ -4,15 +4,13 @@
 
 ## Introducción
 
-[Markdown](https://www.markdownguide.org/) es un lenguaje de marcado ligero utilizado para dar formato a texto de manera sencilla y legible. Fue creado en 2004 por John Gruber y Aaron Swartz, y su principal ventaja es que es fácil de escribir y leer, tanto en su forma original como cuando se convierte a HTML u otros formatos de presentación.
+[Markdown](https://www.markdownguide.org/) es un lenguaje de marcado ligero que facilita el formato de texto de manera sencilla y legible. Fue creado en 2004 por John Gruber y Aaron Swartz. Su principal ventaja es que es fácil de escribir y leer, y se convierte fácilmente a HTML y otros formatos. Es ampliamente utilizado en documentación, blogs, y plataformas como GitHub para archivos README.
 
-Markdown se ha convertido en un estándar en la escritura de documentación, blogs, y hasta en sistemas de control de versiones como GitHub, donde se utiliza para escribir archivos README.
+## Elementos Básicos de Markdown
 
-## Elementos Básicos de Markdown con Ejemplos
+### 1. Encabezados
 
-### 1. **Encabezados**
-
-Los encabezados se crean utilizando el símbolo `#`. A mayor cantidad de `#`, menor será el nivel del encabezado.
+Crea encabezados con el símbolo `#`. Más `#` indican un encabezado de nivel inferior.
 
 #### Ejemplo:
 ```markdown
@@ -21,17 +19,11 @@ Los encabezados se crean utilizando el símbolo `#`. A mayor cantidad de `#`, me
 ### Sub-subtítulo (H3)
 ```
 
-Resultado:
-
-# Título Principal (H1)
-## Subtítulo (H2)
-### Sub-subtítulo (H3)
-
 ---
 
-### 2. **Párrafos**
+### 2. Párrafos
 
-Un párrafo se crea simplemente escribiendo texto seguido de una línea en blanco. No se requieren saltos de línea explícitos a menos que quieras empezar un nuevo párrafo.
+Escribe texto seguido de una línea en blanco para crear un nuevo párrafo.
 
 #### Ejemplo:
 ```markdown
@@ -40,20 +32,14 @@ Este es un párrafo simple.
 Este es otro párrafo, separado del anterior por una línea en blanco.
 ```
 
-Resultado:
-
-Este es un párrafo simple.
-
-Este es otro párrafo, separado del anterior por una línea en blanco.
-
 ---
 
-### 3. **Negrita y Cursiva**
+### 3. Negrita y Cursiva
 
-Puedes aplicar negrita y cursiva para destacar partes del texto.
+Destaca el texto usando negrita o cursiva:
 
-- **Negrita:** Envuelve el texto con dos pares de asteriscos (`**texto**`) o guiones bajos (`__texto__`).
-- *Cursiva:* Usa un par de asteriscos (`*texto*`) o guiones bajos (`_texto_`).
+- **Negrita:** Usa `**texto**` o `__texto__`.
+- *Cursiva:* Usa `*texto*` o `_texto_`.
 
 #### Ejemplo:
 ```markdown
@@ -61,147 +47,96 @@ Puedes aplicar negrita y cursiva para destacar partes del texto.
 *Texto en cursiva*
 ```
 
-Resultado:
-
-**Texto en negrita**  
-*Texto en cursiva*
-
 ---
 
-### 4. **Listas**
+### 4. Listas
 
-Markdown permite crear listas ordenadas y no ordenadas con facilidad.
+Crea listas ordenadas y no ordenadas fácilmente.
 
-- **Listas no ordenadas:** Usa `*`, `-`, o `+` seguido de un espacio.
-- **Listas ordenadas:** Usa números seguidos de un punto.
+- **No ordenadas:** Usa `*`, `-`, o `+`.
+- **Ordenadas:** Usa números seguidos de un punto.
 
-#### Ejemplo de lista no ordenada:
+#### Ejemplo:
 ```markdown
 - Manzanas
 - Naranjas
   - Valencia
   - Navel
-- Uvas
 ```
 
-Resultado:
-
-- Manzanas
-- Naranjas
-  - Valencia
-  - Navel
-- Uvas
-
-#### Ejemplo de lista ordenada:
 ```markdown
 1. Primer paso
 2. Segundo paso
 3. Tercer paso
 ```
 
-Resultado:
-
-1. Primer paso
-2. Segundo paso
-3. Tercer paso
-
 ---
 
-### 5. **Enlaces**
+### 5. Enlaces
 
-Puedes insertar enlaces tanto internos como externos. 
+Inserta enlaces con la siguiente sintaxis:
 
 #### Ejemplo:
 ```markdown
 [Visita Google](https://www.google.com)
-
-[Mira la sección Encabezados](#encabezados)
 ```
-
-Resultado:
-
-[Visita Google](https://www.google.com)
-
-[Mira la sección Encabezados](#encabezados)
 
 ---
 
-### 6. **Imágenes**
+### 6. Imágenes
 
-Inserta imágenes de manera similar a los enlaces, pero precede el texto alternativo con `!`.
+Inserta imágenes de manera similar a los enlaces, pero precede con `!`.
 
 #### Ejemplo:
 ```markdown
 ![Logo de Markdown](https://downloads.marketplace.jetbrains.com/files/18897/166369/icon/pluginIcon.png)
 ```
 
-Resultado:
-
-![Logo de Markdown](https://downloads.marketplace.jetbrains.com/files/18897/166369/icon/pluginIcon.png)
-
 ---
 
-### 7. **Citas**
+### 7. Citas
 
-Las citas se crean utilizando `>` al principio de la línea. Son útiles para destacar textos o para citas literales.
+Destaca texto con citas utilizando `>` al principio de la línea.
 
 #### Ejemplo:
 ```markdown
 > Esto es una cita importante.
 ```
 
-Resultado:
-
-> Esto es una cita importante.
-
 ---
 
-### 8. **Código**
+### 8. Código en Python
 
-Para resaltar fragmentos de código en línea, usa acentos graves (`\``). Para bloques de código, envuélvelos con tres acentos graves.
+Markdown permite resaltar código en línea y en bloques. Es ideal para compartir scripts de Python.
 
 #### Ejemplo de código en línea:
+
 ```markdown
-El comando `ls` lista los archivos en el directorio.
+El comando `print("Hola, mundo")` se utiliza para mostrar texto en Python.
 ```
-
-Resultado:
-
-El comando `ls` lista los archivos en el directorio.
 
 #### Ejemplo de bloque de código:
-```markdown
-```
-{
-  "nombre": "John",
-  "edad": 30
-}
-```
+
+
+```python
+def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+nombre = "John"
+print(saludar(nombre))
 ```
 
-Resultado:
-
-```
-{
-  "nombre": "John",
-  "edad": 30
-}
-```
 
 ---
 
-### 9. **Fórmulas Matemáticas**
+### 9. Fórmulas Matemáticas
 
-Gracias a *MathJax*, puedes incluir expresiones matemáticas utilizando LaTeX dentro de Markdown.
+Incorpora expresiones matemáticas utilizando LaTeX con *MathJax*.
 
 #### Ejemplo de fórmula en línea:
 ```markdown
 La ecuación de Einstein es $E = mc^2$.
 ```
-
-Resultado:
-
-La ecuación de Einstein es $E = mc^2$.
 
 #### Ejemplo de fórmula en bloque:
 ```markdown
@@ -210,12 +145,5 @@ $$
 $$
 ```
 
-Resultado:
-
-$$
-\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}
-$$
-
-
-
+---
 
