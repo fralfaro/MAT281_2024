@@ -73,4 +73,5 @@ target/
 public
 site
 tdd
+.vscode
 _others_
