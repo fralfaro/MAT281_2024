@@ -128,6 +128,8 @@ nav:
         - Laboratorios:
             - Lab 01: labs/lab_01.ipynb
             - Lab 02: labs/lab_02.ipynb
+            - Lab 031: labs/lab_031.ipynb
+            - Lab 032: labs/lab_032.ipynb
         - Tareas:
             - Tarea 01: homeworks/hw_01.ipynb
         - Proyecto:
