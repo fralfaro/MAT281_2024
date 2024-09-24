@@ -109,6 +109,7 @@ nav:
         - lectures/data_manipulation/sc_01.ipynb
         - lectures/data_manipulation/pd_01a.ipynb
         - lectures/data_manipulation/pd_01b.ipynb
+        - lectures/data_manipulation/eda_01.ipynb
     - 📊 Visualization:
         - lectures/visualization/vis_intro.md
         - lectures/visualization/vis_01.ipynb
@@ -131,6 +132,7 @@ nav:
             - Lab 031: labs/lab_031.ipynb
             - Lab 032: labs/lab_032.ipynb
             - Lab 04: labs/lab_04.ipynb
+            - Lab 05: labs/lab_05.ipynb
         - Tareas:
             - Tarea 01: homeworks/hw_01.ipynb
         - Proyecto:
