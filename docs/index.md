@@ -29,7 +29,7 @@ hide:
 - title: Machine Learning
   content: Sklearn, XGBoost
   image: images/icons/ml.png
-  url: lectures/machine_learning/ml_intro
+  url: lectures/machine_learning/01_intro
 
 
 ::/cards::

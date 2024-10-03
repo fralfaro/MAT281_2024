@@ -115,7 +115,9 @@ nav:
         - lectures/visualization/vis_01.ipynb
         - lectures/visualization/vis_02.ipynb
     - 🤖 Machine Learning:
-        - lectures/machine_learning/ml_intro.md
+        - lectures/machine_learning/01_intro.ipynb
+        - lectures/machine_learning/011_concepts.ipynb
+        - lectures/machine_learning/012_sklearn.ipynb
         - lectures/machine_learning/reg_01.ipynb
         - lectures/machine_learning/reg_02.ipynb
         - lectures/machine_learning/cla_01.ipynb
@@ -133,6 +135,7 @@ nav:
             - Lab 032: labs/lab_032.ipynb
             - Lab 04: labs/lab_04.ipynb
             - Lab 05: labs/lab_05.ipynb
+            - Lab 06: labs/lab_06.ipynb
         - Tareas:
             - Tarea 01: homeworks/hw_01.ipynb
         - Proyecto:
