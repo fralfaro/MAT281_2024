@@ -59,7 +59,6 @@ La solución debe alojarse en su **Portafolio Personal** del curso (`.ipynb`).
 ### Presentación de Resultados
 
 * La presentación consta de 10-20 minutos. 
-* Debe grabar su presentación y subirla al siguiente [espacio de trabajo](https://drive.google.com/drive/folders/1QujMqrszub2KjS4mxFbkZGhd_AwvlQtb?usp=sharing).
 * Utilizar diapositivas con [BEAMER](https://www.dropbox.com/s/ol38qwzacgwzud7/Beamer.rar). Se deja el siguiente el siguiente [tutorial](https://www.youtube.com/watch?v=rx7wwtmFlD8&t=792s&ab_channel=Dr.TreforBazett) a modo de ejemplo.
 * La presentación debe alojarse en su **Portafolio Personal** del curso (`.pdf`).
 
@@ -68,7 +67,7 @@ La solución debe alojarse en su **Portafolio Personal** del curso (`.ipynb`).
 
 ## Información Importante
 
-* **Plazo**: 01 de Diciembre del 2024 (hasta las 11:59 PM) 
+* **Plazo**: 05 de Diciembre del 2024 (hasta las 11:59 PM) 
 * Esto corresponde a un desafio de Kaggle ([link](https://www.kaggle.com/competitions/spaceship-titanic/)).
 * La información respecto a los datos, lo pueden encontrar en el siguiente [link](https://www.kaggle.com/competitions/spaceship-titanic/data).
 * A modo de inspiración, pueden ocupar algunos gráficos de otros participantes del desafío ([link](https://www.kaggle.com/competitions/spaceship-titanic/code)).
