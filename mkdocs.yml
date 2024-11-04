@@ -116,8 +116,7 @@ nav:
         - lectures/visualization/vis_02.ipynb
     - 🤖 Machine Learning:
         - lectures/machine_learning/01_intro.ipynb
-        - lectures/machine_learning/011_concepts.ipynb
-        - lectures/machine_learning/012_sklearn.ipynb
+        - lectures/machine_learning/basic_01.ipynb
         - lectures/machine_learning/reg_01.ipynb
         - lectures/machine_learning/reg_02.ipynb
         - lectures/machine_learning/cla_01.ipynb
