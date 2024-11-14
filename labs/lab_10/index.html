@@ -2440,7 +2440,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/fralfaro/MAT281_2023/blob/main/docs/labs/lab_10.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/fralfaro/MAT281_2024/blob/main/docs/labs/lab_10.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 <h1 id="mat281-laboratorio-n10">MAT281 - Laboratorio N°10<a class="anchor-link" href="#mat281-laboratorio-n10">¶</a></h1><p><a id="p1"></a></p>
 <h2 id="i-problema-01">I.- Problema 01<a class="anchor-link" href="#i-problema-01">¶</a></h2><p>Lista de actos delictivos registrados por el Service de police de la Ville de Montréal (SPVM).</p>
 <p><img align="center" alt="No description has been provided for this image" height="360" src="http://henriquecapriles.com/wp-content/uploads/2017/02/femina_detenida-1080x675.jpg" width="480"/></p>
@@ -2604,7 +2604,7 @@ def regression_metrics(df):
   <span class="s1">'Introduction'</span><span class="p">,</span> <span class="s1">'Méfait'</span><span class="p">,</span><span class="s1">'Vol dans / sur véhicule à moteur'</span><span class="p">,</span> <span class="s1">'Vol de véhicule à moteur'</span><span class="p">,</span>
 <span class="p">]</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/labs/lab_10/data/interventionscitoyendo.csv"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">","</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'latin-1'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/fralfaro/MAT281_2024/main/docs/labs/data/interventionscitoyendo.csv"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">","</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'latin-1'</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1">'</span><span class="p">)</span>
 
@@ -2618,7 +2618,7 @@ validate_categorie = [
   'Introduction', 'Méfait','Vol dans / sur véhicule à moteur', 'Vol de véhicule à moteur',
 ]
 
-df = pd.read_csv("https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/labs/lab_10/data/interventionscitoyendo.csv", sep=",", encoding='latin-1')
+df = pd.read_csv("https://raw.githubusercontent.com/fralfaro/MAT281_2024/main/docs/labs/data/interventionscitoyendo.csv", sep=",", encoding='latin-1')
 df.columns = df.columns.str.lower()
 df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
 
