@@ -2475,6 +2475,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -2865,11 +2866,11 @@ Una manipulación adecuada permite mejorar la precisión de los modelos predicti
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># cargar librerias</span>
 
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_columns'</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>  <span class="c1"># Ver más columnas de los dataframes</span>
 
@@ -3180,7 +3181,7 @@ Name: pais, Length: 228, dtype: object</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># resumen de la informacion</span>
 
-<span class="k">def</span> <span class="nf">resumen_por_columna</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">cols</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">resumen_por_columna</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">cols</span><span class="p">):</span>
     <span class="n">pd_series</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span>
     
     <span class="c1"># elementos distintos </span>

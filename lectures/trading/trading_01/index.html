@@ -2229,6 +2229,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -2478,24 +2479,24 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># import python utility libraries</span>
-<span class="kn">import</span> <span class="nn">os</span> <span class="k">as</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
-<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">it</span>
 
 <span class="c1"># import python data science libraries</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># import the pandas financial data reader library</span>
-<span class="kn">import</span> <span class="nn">pandas_datareader</span> <span class="k">as</span> <span class="nn">dr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas_datareader</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dr</span>
 
 <span class="c1"># import the matplotlib and seaborn visualization library</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 
-<span class="kn">import</span> <span class="nn">bt</span> <span class="k">as</span> <span class="nn">bt</span> <span class="c1"># library to backtest trading signals</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">bt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">bt</span> <span class="c1"># library to backtest trading signals</span>
 
-<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-1"># import python utility libraries
@@ -3973,16 +3974,16 @@ ibm_market_data = ibm_market_data.set_index(pd.to_datetime(ibm_data.index))</div
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">MovingAverageStrategy</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">Algo</span><span class="p">):</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MovingAverageStrategy</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">Algo</span><span class="p">):</span>
 
     <span class="c1"># inits the strategy</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signals</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signals</span><span class="p">):</span>
 
         <span class="c1"># set class signals</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">signals</span> <span class="o">=</span> <span class="n">signals</span>
 
     <span class="c1"># calss the trading strategy</span>
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
 
         <span class="c1"># case: current timestep in signals</span>
         <span class="k">if</span> <span class="n">target</span><span class="o">.</span><span class="n">now</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">signals</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
@@ -4122,7 +4123,7 @@ cross_mav_ibm_strategy_base = bt.Strategy(name='base', algos=[bt.algos.SelectAll
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># init trading fees function</span>
-<span class="k">def</span> <span class="nf">trading_fees_function</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">trading_fees_function</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
 
     <span class="c1"># calcluate trading fees (rebalanced-quantity * trading-fee)</span>
     <span class="n">fees</span> <span class="o">=</span> <span class="n">q</span> <span class="o">*</span> <span class="mf">0.01</span> <span class="c1"># non-flat fee of 1% per quantity of rebalanced asset</span>
@@ -5225,7 +5226,7 @@ ibm_market_data['MA_300'] = ibm_market_data['IBM'].rolling(window=300).mean()</d
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Implementar la estrategia de cruce de medias móviles</span>
-<span class="k">def</span> <span class="nf">moving_average_crossover_strategy</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">moving_average_crossover_strategy</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="n">signals</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
     <span class="n">signals</span><span class="p">[</span><span class="s1">'Signal'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="n">signals</span><span class="p">[</span><span class="s1">'MA_10'</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'MA_10'</span><span class="p">]</span>
@@ -5241,7 +5242,7 @@ ibm_market_data['MA_300'] = ibm_market_data['IBM'].rolling(window=300).mean()</d
 <span class="n">signals_300_200</span> <span class="o">=</span> <span class="n">moving_average_crossover_strategy</span><span class="p">(</span><span class="n">ibm_market_data</span><span class="p">[[</span><span class="s1">'MA_300'</span><span class="p">,</span> <span class="s1">'MA_200'</span><span class="p">]])</span>
 
 <span class="c1"># Calcular el rendimiento total para cada estrategia</span>
-<span class="k">def</span> <span class="nf">calculate_total_return</span><span class="p">(</span><span class="n">signals</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_total_return</span><span class="p">(</span><span class="n">signals</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="n">positions</span> <span class="o">=</span> <span class="n">signals</span><span class="p">[</span><span class="s1">'Positions'</span><span class="p">]</span>
     <span class="n">returns</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'Adj Close'</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
     <span class="n">total_return</span> <span class="o">=</span> <span class="p">(</span><span class="n">positions</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">returns</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>

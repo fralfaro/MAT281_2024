@@ -2256,6 +2256,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -2558,7 +2559,7 @@ fds.ai email addresses).</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">YouTubeVideo</span>
 <span class="c1"># Nvidia GTC 2017: "I Am AI" Opening in Keynote"</span>
 <span class="c1"># YouTubeVideo('SUNPrR4o5ZA', width=800, height=600)</span>
 </pre></div>
@@ -2612,20 +2613,20 @@ fds.ai email addresses).</p>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># import python utility libraries</span>
-<span class="kn">import</span> <span class="nn">os</span> <span class="k">as</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
-<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">it</span>
 
 <span class="c1"># import python data science libraries</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># import the pandas financial data reader library</span>
-<span class="kn">import</span> <span class="nn">pandas_datareader</span> <span class="k">as</span> <span class="nn">dr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas_datareader</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dr</span>
 
 <span class="c1"># import the matplotlib and seaborn visualization library</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-2"># import python utility libraries
 import os as os
@@ -2688,7 +2689,7 @@ import seaborn as sns</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">bt</span> <span class="k">as</span> <span class="nn">bt</span> <span class="c1"># library to backtest trading signals</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">bt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">bt</span> <span class="c1"># library to backtest trading signals</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-3">import bt as bt # library to backtest trading signals</div>
 </div>
@@ -2726,7 +2727,7 @@ import seaborn as sns</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-4">import warnings
@@ -5461,16 +5462,16 @@ eurusd_market_data = eurusd_market_data.set_index(pd.to_datetime(eurusd_data.ind
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">MeanReversionStrategy</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">Algo</span><span class="p">):</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MeanReversionStrategy</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">Algo</span><span class="p">):</span>
 
     <span class="c1"># inits the strategy</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signals</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signals</span><span class="p">):</span>
 
         <span class="c1"># set class signals</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">signals</span> <span class="o">=</span> <span class="n">signals</span>
 
     <span class="c1"># calss the trading strategy</span>
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
 
         <span class="c1"># case: current timestep in signals</span>
         <span class="k">if</span> <span class="n">target</span><span class="o">.</span><span class="n">now</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">signals</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
@@ -5608,7 +5609,7 @@ mre_mav_eurusd_strategy_base = bt.Strategy(name='base', algos=[bt.algos.SelectAl
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># init trading fees function</span>
-<span class="k">def</span> <span class="nf">trading_fees_function</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">trading_fees_function</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
 
     <span class="c1"># calcluate trading fees (rebalanced-quantity * trading-fee)</span>
     <span class="n">fees</span> <span class="o">=</span> <span class="mf">5.00</span> <span class="c1"># flat fee of USD 5.00 per trade</span>

@@ -2657,6 +2657,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -6284,7 +6285,7 @@ print("Diccionario después de vaciarlo:", mi_diccionario)</div>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="definiciones">Definiciones<a class="anchor-link" href="#definiciones">¶</a></h3><p>Una función es un bloque de código que realiza una tarea específica y puede ser llamado desde cualquier parte del programa. Las funciones pueden tener parámetros (datos que se pasan a la función) y pueden devolver un resultado. Al utilizar funciones, podemos dividir el código en partes más pequeñas y manejables, lo que facilita la comprensión y la depuración.</p>
 <h3 id="sintaxis">Sintaxis<a class="anchor-link" href="#sintaxis">¶</a></h3><p>La sintaxis básica de una función en Python es la siguiente:</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">nombre_funcion</span><span class="p">(</span><span class="n">parametros</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">nombre_funcion</span><span class="p">(</span><span class="n">parametros</span><span class="p">):</span>
     <span class="c1"># Cuerpo de la función</span>
     <span class="c1"># Realizar operaciones</span>
     <span class="k">return</span> <span class="n">resultado</span>
@@ -6318,7 +6319,7 @@ print("Diccionario después de vaciarlo:", mi_diccionario)</div>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir una función sin parámetros y sin valor de retorno</span>
-<span class="k">def</span> <span class="nf">saludar</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"¡Hola!"</span><span class="p">)</span>
 
 <span class="c1"># Llamar a la función</span>
@@ -6368,7 +6369,7 @@ saludar()</div>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir una función con parámetros y sin valor de retorno</span>
-<span class="k">def</span> <span class="nf">saludar_persona</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">saludar_persona</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"¡Hola,"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">"!"</span><span class="p">)</span>
 
 <span class="c1"># Llamar a la función con un argumento</span>
@@ -6418,7 +6419,7 @@ saludar_persona("Juan")</div>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir una función con parámetros y con valor de retorno</span>
-<span class="k">def</span> <span class="nf">sumar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sumar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
 <span class="c1"># Llamar a la función y almacenar el resultado en una variable</span>
@@ -6470,7 +6471,7 @@ print("Resultado de la suma:", resultado)</div>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Función con parámetros con valores predeterminados</span>
-<span class="k">def</span> <span class="nf">multiplicar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">multiplicar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
 
 <span class="c1"># Llamar a la función con un solo argumento</span>
@@ -6531,7 +6532,7 @@ Resultado de la multiplicación (con argumento específico): 12
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Función con un número variable de argumentos</span>
-<span class="k">def</span> <span class="nf">promedio</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">promedio</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 
 <span class="c1"># Llamar a la función con diferentes cantidades de argumentos</span>
@@ -6590,7 +6591,7 @@ Promedio de 1, 3, 5, 7 y 9: 5.0
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Función con argumentos de palabra clave</span>
-<span class="k">def</span> <span class="nf">mostrar_info</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">mostrar_info</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Nombre:"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Edad:"</span><span class="p">,</span> <span class="n">edad</span><span class="p">)</span>
 
@@ -6643,7 +6644,7 @@ Edad: 25
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Función con retorno de múltiples valores</span>
-<span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="n">cociente</span> <span class="o">=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
     <span class="n">resto</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
     <span class="k">return</span> <span class="n">cociente</span><span class="p">,</span> <span class="n">resto</span>
@@ -6702,10 +6703,10 @@ Resto: 1
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Funciones anidadas</span>
-<span class="k">def</span> <span class="nf">exterior</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">exterior</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Función exterior"</span><span class="p">)</span>
     
-    <span class="k">def</span> <span class="nf">interior</span><span class="p">():</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">interior</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Función interior"</span><span class="p">)</span>
     
     <span class="n">interior</span><span class="p">()</span>
@@ -7294,7 +7295,7 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[80], line 2</span>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Error de valor: Argumento fuera de rango</span>
-<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 <span class="n">raiz_negativa</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-81"># Error de valor: Argumento fuera de rango
@@ -7605,7 +7606,7 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[85], line 2</span>
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Error semántico: Lógica incorrecta</span>
-<span class="k">def</span> <span class="nf">calcular_promedio</span><span class="p">(</span><span class="n">valores</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calcular_promedio</span><span class="p">(</span><span class="n">valores</span><span class="p">):</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">valor</span> <span class="ow">in</span> <span class="n">valores</span><span class="p">:</span>
         <span class="n">suma</span> <span class="o">+=</span> <span class="n">valor</span>
